@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A multimedia research report examining bias in large language model responses.">
+  <title>New Pictures, Same Patterns? | Research report</title>
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script src="assets/js/site.js" defer></script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="LLM Response Bias home"><span class="wordmark-mark">R/01</span><span>Research report</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Sections <span aria-hidden="true">+</span></button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Report sections">
+      <a href="index.html" aria-current="page">1. Entry</a>
+      <a href="literature-review.html">2. Literature</a>
+      <a href="methodology.html">3. Method</a>
+      <a href="findings.html">4. Findings</a>
+      <a href="conclusions.html">5. Conclusions</a>
+      <a href="bibliography.html">6. Bibliography</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="home-intro page-shell">
+      <p class="eyebrow"><span class="eyebrow-dot"></span> Part 01 <span class="eyebrow-rule"></span> Entry point <span class="eyebrow-rule"></span> 2026</p>
+      <div class="title-stage">
+        <figure class="title-art title-art-353"><img src="assets/media/artwork-353.png" alt="Colorful vertical striped painting"></figure>
+        <figure class="title-art title-art-749"><img src="assets/media/artwork-749.png" alt="Abstract painting in gold, yellow, and red"></figure>
+        <figure class="title-art title-art-709"><img src="assets/media/artwork-709.png" alt="Figurative painting in orange, green, and blue"></figure>
+        <h1>New Pictures,<br><span>same patterns?</span></h1>
+      </div>
+      <div class="intro-bottom">
+        <p class="caption-placeholder">04, 08, 07</p>
+        <p class="intro-summary">Testing the racial and gender response bias of three LLMs in college advising</p>
+        <a class="text-link" href="literature-review.html">Enter the report <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="home-visual" aria-label="Opening video">
+        <video class="opening-video" controls muted playsinline preload="metadata" data-scroll-play aria-label="WhatsApp video for the research report">
+          <source src="assets/media/opening-video.mp4" type="video/mp4">
+          Your browser does not support embedded video.
+        </video>
+      </div>
+    </section>
+    <section class="study-context page-shell" aria-labelledby="context-heading">
+      <div class="context-heading">
+        <p class="eyebrow">Our path to the Research Question</p>
+        <h2 id="context-heading">Is Your College Advisor <span>Racist and Sexist?</span></h2>
+        <img class="context-image" src="assets/media/intro-whatsapp-image.jpeg" alt="Meme contrasting an AI designed to be unbiased with its training by biased humans">
+        <p class="caption-placeholder">01</p>
+      </div>
+      <div class="context-copy">
+        <p>According to a Pew Research Center survey from December 2025, 64% of teens aged 13 to 17 report using AI chatbots. A large-data analysis published by OpenAI in September 2025 also classified 49% of inquiries as “asking”: ChatGPT (and presumably other LLMs) are <span class="text-highlight">increasingly taking on an advisory role.</span> Meanwhile, the formerly theorised reproduction of training data bias is being quantified by researchers as AI tools reproduce stereotypes - and the tools’ performance is observed to be affected by the demographic characteristics of the person using them.</p>
+        <p>Grander et al (2026) define LLM bias as <span class="text-highlight">“systematic distortions, attribution errors, or factual distortions that cause a preference for specific groups or ideas, the perpetuation of stereotypes, or the generation of inaccurate conclusions derived from learned patterns”</span>. While multiple studies have demonstrated the racial and gender bias of AI responses, the impact of this bias in the LLMs’ advisory roles seems underdescribed. We wanted to test these biased advisors by asking one of the most path-determining questions many young people may ask: <span class="text-highlight">Where should I go to college?</span></p>
+        <ul class="context-points">
+          <li>We chose to examine three American LLMs: the biggest generalists, Claude and ChatGPT, and a specialized LLM, Solvi designed specifically for college advising. This allows us to see if bias patterns are similar across competitors and how they are affected by specialization.</li>
+          <li>The model student was given a fixed US American nationality to investigate bias inside the national context. For college advising, the US context is also especially interesting because of the existence of historically Black-serving or Hispanic-serving colleges and universities (HBCU/HSI), which may be explicitly recommended to members of these groups.</li>
+          <li>US American English has been shown to be dominant in the training data of both Claude and ChatGPT. By staying within English prompting and the US context, we avoid the underperformance found across other language groups.</li>
+        </ul>
+        <div class="research-question">
+          <h3 class="section-kicker">Research question</h3>
+          <p>We thus ended up with the following research question:</p>
+          <p class="question-prompt">To what extent is the advice given</p>
+          <ol>
+            <li>by ChatGPT, Claude and Solvi;</li>
+            <li>to US American students;</li>
+            <li>on whether and where the user should pursue higher education;</li>
+          </ol>
+          <p class="question-ending">biased along axes of racialisation and gender?</p>
+        </div>
+        <div class="hypotheses">
+          <h3 class="section-kicker">Our hypotheses</h3>
+          <ol>
+            <li>Latinx and Black-sounding names will receive suggestions of comparatively less prestigious institutions relative to the white baseline and East Asian-sounding names, possibly resulting from the recommendation of historically minority-serving colleges.</li>
+            <li>Women-identified names will receive suggestions of comparatively less prestigious institutions relative to the men-identified baseline.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <section class="route-section page-shell" aria-labelledby="route-heading">
+      <div class="section-heading"><p class="eyebrow">Explore the study</p><h2 id="route-heading">The report, in six parts.</h2></div>
+      <div class="route-list">
+        <a class="route-item" href="index.html"><span class="route-number">1.</span><span class="route-title">Entry point</span><span class="route-detail">Why our question demands a response</span><span class="route-arrow" aria-hidden="true">↗</span></a>
+        <a class="route-item" href="literature-review.html"><span class="route-number">2.</span><span class="route-title">Literature</span><span class="route-detail">Response bias and adverse effects: what we know</span><span class="route-arrow" aria-hidden="true">↗</span></a>
+        <a class="route-item" href="methodology.html"><span class="route-number">3.</span><span class="route-title">Method</span><span class="route-detail">Designing a 3x3x2x4 prompt-response analysis</span><span class="route-arrow" aria-hidden="true">↗</span></a>
+        <a class="route-item" href="findings.html"><span class="route-number">4.</span><span class="route-title">Findings</span><span class="route-detail">Patterns of reasoning, tone and explicit recommendations</span><span class="route-arrow" aria-hidden="true">↗</span></a>
+        <a class="route-item" href="conclusions.html"><span class="route-number">5.</span><span class="route-title">Conclusions</span><span class="route-detail">Synthesis, limitations, and paths to explore</span><span class="route-arrow" aria-hidden="true">↗</span></a>
+        <a class="route-item" href="bibliography.html"><span class="route-number">6.</span><span class="route-title">Bibliography</span><span class="route-detail">Literature and media</span><span class="route-arrow" aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="wordmark" href="index.html"><span class="wordmark-mark">R/01</span><span>LLM response bias</span></a><p>Research report: Danya, Hidaya and Vivi <span class="copyright-year">2026</span></p></footer>
+</body>
+</html>

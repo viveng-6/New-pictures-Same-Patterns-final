@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Literature review for a multimedia research report on LLM response bias.">
+  <title>Literature Review | LLM Response Bias</title>
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script src="assets/js/site.js" defer></script>
+</head>
+<body data-page="literature">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="LLM Response Bias home"><span class="wordmark-mark">R/01</span><span>Research report</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Sections <span aria-hidden="true">+</span></button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Report sections">
+      <a href="index.html">1. Entry</a><a href="literature-review.html" aria-current="page">2. Literature</a><a href="methodology.html">3. Method</a><a href="findings.html">4. Findings</a><a href="conclusions.html">5. Conclusions</a><a href="bibliography.html">6. Bibliography</a>
+    </nav>
+  </header>
+  <main id="main" class="page-shell report-page">
+    <p class="eyebrow"><span class="eyebrow-dot"></span> Part 02 <span class="eyebrow-rule"></span> Context</p>
+    <div class="report-grid">
+        <aside class="page-aside"><span class="aside-label">In this section</span><a href="#overview">Overview</a><a href="#definition">What counts as bias?</a><a href="#implicit-signals">Implicit signals</a><a href="#educational-advice">Educational advice</a><a href="#media">Media / evidence</a><figure class="nurock-image page-aside-image"><img src="assets/media/nurock-identity-protest.png" alt="A person holding an ‘I AM NOT A MAN’ sign during a street protest"><figcaption class="caption-placeholder">02</figcaption></figure></aside>
+      <svg class="nurock-arrow-overlay" viewBox="0 0 1 1" preserveAspectRatio="none" aria-hidden="true"><defs><marker id="nurock-overlay-arrowhead" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="currentColor" stroke-width="1.5"></path></marker></defs><path class="nurock-overlay-path" pathLength="1000" marker-end="url(#nurock-overlay-arrowhead)"></path></svg>
+      <article class="report-content">
+        <section id="overview"><p class="section-kicker">01 / Overview</p><h2>Intersections of biases and triggers</h2><p class="placeholder-copy">Our literature nuances the chosen definition of LLM bias by pointing out the differences between overt discrimination and covert preference-related bias - as well as the potential damage caused by safeguard mechanisms that are intended to ensure fairness. The main goal of our inquiry becomes, then, to elucidate these nuances and the layers of bias triggers behind them.</p></section>
+        <section id="key-themes"><p class="section-kicker">02 / Key themes</p>
+          <div class="literature-theme" id="definition">
+            <h3>1. What counts as &quot;bias&quot;?</h3>
+            <ul class="literature-points">
+              <li><strong>Ghosh et al. (2025)</strong> reviewed 189 papers on AI/LLM bias over ten years. 155 gave no definition of bias, most focused on gender alone, and few proposals had actionable mitigation proposals for real models. Our investigation’s design and discussion is based on a clearly enumerated definition of LLM bias.</li>
+            </ul>
+            <div class="nurock-feature">
+              <div class="nurock-heading" data-nurock-arrow><strong class="nurock-citation">Nurock (2019)</strong></div>
+              <p>gives us a theoretical foundation in the understanding of race and gender as social constructs. <span class="text-highlight">AI's claim to neutrality hides a &quot;view from nowhere&quot; that is in fact White and male.</span> Her key concept is artificialisation: AI does not just mirror social hierarchies, it encodes them as technical and therefore &quot;natural&quot;, and users then adjust to them.</p>
+            </div>
+          </div>
+          <div class="literature-theme" id="implicit-signals">
+            <h3>2. Implicit signals: names and dialect</h3>
+            <ul class="literature-points">
+              <li><strong>Bertrand &amp; Mullainathan (2004)</strong> is the founding audit study: identical CVs with &quot;White-sounding&quot; names received about 50% more callbacks than those with &quot;Black-sounding&quot; names. <span class="text-highlight">From this study, we draw the idea of using names as implicit markers of gender and racial identity.</span></li>
+              <li><strong>Haim, Salinas &amp; Nyarko (2024)</strong> replicated this research on LLM advice across 42 prompt templates. Names associated with racial minorities and women received systematically worse advice, Black women worst of all.</li>
+              <li><strong>Hofmann et al. (2024, Nature)</strong> show that African American English triggers archaic, 1930s-era stereotypes, while the same models describe African Americans positively when asked directly. Scale and human-feedback training reduced overt but not covert prejudice. Understanding the mechanisms behind the forms of bias that escape and are created by anti-bias measures is a central objective of our study.</li>
+              <li><strong>An et al. (2025, PNAS Nexus)</strong> find intersectional effects in automated CV scoring: outcomes depend on the combination of race and gender, not on either alone.</li>
+            </ul>
+          </div>
+          <div class="literature-theme" id="educational-advice">
+            <h3>3. Explicit v. implicit identity and educational advice</h3>
+            <ul class="literature-points">
+              <li><strong>Shailya et al. (2025)</strong> test LLM university recommendations with explicitly stated identities. They find a strong bias toward Western institutions, <span class="text-highlight">worse academic fit for women and transgender students along stereotyped fields</span>, and lower ratings for low- and middle-income students.</li>
+              <li><strong>Haq et al. (2026)</strong> compare implicit dialect with explicit profiles. Explicit identity is &quot;penalised&quot; more: safety mechanisms kick in and answers become sanitised. Implicit markers stay closer to a neutral reference but expose users to unfiltered content. They frame this as a trade-off of priorities. <span class="text-highlight">We replicate their comparison because we see that isolating the effect of inorganic identity statements brings us closer to an understanding of real world interactions with AI.</span></li>
+              <li><strong>Tamkin et al. (2023, Anthropic)</strong> tested Claude on decisions with demographics stated explicitly and found both positive and negative discrimination, which prompting could reduce. This matters because it is the developer's own evaluation of the model we audit.</li>
+              <li><strong>Grey literature:</strong> press reports (Nonprofit News Feed; US News &amp; World Report) describe chatbots <span class="text-highlight">steering students toward elite, well-known schools</span>, and admissions offices adapting to AI use.</li>
+            </ul>
+          </div>
+        </section>
+          <section id="media"><p class="section-kicker">03 / Media / evidence</p><video class="content-video" controls playsinline preload="metadata" aria-label="Spiller inn video"><source src="assets/media/spiller-inn.mp4" type="video/mp4">Your browser does not support embedded video.</video><p class="caption-placeholder">03</p></section>
+        <nav class="page-pagination" aria-label="Report page navigation"><a href="index.html"><span aria-hidden="true">↖</span> 1. Entry</a><span class="pagination-label">Next section</span><a href="methodology.html">3. Method <span aria-hidden="true">↗</span></a></nav>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer"><a class="wordmark" href="index.html"><span class="wordmark-mark">R/01</span><span>LLM response bias</span></a><p>Research report: Danya, Hidaya and Vivi <span class="copyright-year">2026</span></p></footer>
+</body>
+</html>

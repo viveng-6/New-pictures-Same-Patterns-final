@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Findings and analysis from a multimedia research report on LLM response bias.">
+  <title>Findings &amp; Analysis | LLM Response Bias</title>
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script src="assets/js/site.js" defer></script>
+</head>
+<body data-page="findings">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="LLM Response Bias home"><span class="wordmark-mark">R/01</span><span>Research report</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Sections <span aria-hidden="true">+</span></button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Report sections">
+      <a href="index.html">1. Entry</a><a href="literature-review.html">2. Literature</a><a href="methodology.html">3. Method</a><a href="findings.html" aria-current="page">4. Findings</a><a href="conclusions.html">5. Conclusions</a><a href="bibliography.html">6. Bibliography</a>
+    </nav>
+  </header>
+  <main id="main" class="page-shell report-page">
+    <p class="eyebrow"><span class="eyebrow-dot"></span> Part 04 <span class="eyebrow-rule"></span> Evidence</p>
+    <div class="page-title-row"><h1>Findings<br><span>&amp; analysis</span></h1><p class="page-deck">College recommendations from Claude and ChatGPT show different patterns of academic fit; Solvi rarely made a recommendation.</p></div>
+    <div class="report-grid">
+      <aside class="page-aside"><span class="aside-label">In this section</span><a href="#qualitative">Qualitative comparison</a><a href="#claude-qualitative">Claude reasoning and tone</a><a href="#chatgpt-qualitative">ChatGPT reasoning and tone</a><a href="#quantitative">Quantitative comparison</a><a href="#claude-quantitative">Claude recommendations</a><a href="#chatgpt-quantitative">ChatGPT findings</a><a href="#solvi">Solvi</a></aside>
+      <article class="report-content">
+        <section id="qualitative">
+          <p class="section-kicker">01 / Qualitative comparison</p>
+          <h2>Qualitative Comparison of School Rankings</h2>
+          <h3 class="finding-subtitle" id="claude-qualitative">Analysis of Claude AI Reasoning and Tone</h3>
+          <p>Claude shows some evidence of bias in its arguments across the implicit-explicit identities, though it becomes far more pronounced for the latter condition.</p>
+          <ul class="literature-points methodology-points">
+            <li>Slight geographical shift for implicit identities: Californian universities were recommended only for Huong and Dung, whereas Southwestern institutions dominated for Maricela and Jose.</li>
+            <li>For the African American explicit condition, Claude mentioned the importance of “support communities” more frequently than other identities.</li>
+            <li>For the East Asian explicit conditions, Californian universities continued to be more frequently recommended - but with the occasional caveat that “your background shouldn’t guide your choice”.</li>
+            <li>No noticeable difference between men and women.</li>
+          </ul>
+          <h3 class="finding-subtitle" id="chatgpt-qualitative">Analysis of ChatGPT Reasoning and Tone</h3>
+          <p>Similarly, ChatGPT’s responses indicate bias across both conditions, but the explicit condition – in activating HBCUs and HSIs as alternatives – makes the biggest difference.</p>
+          <ul class="literature-points methodology-points">
+            <li>For implicit conditions, non-white names gave responses that more frequently mentioned Black/Hispanic research and the importance of financial aid or -constraints.</li>
+            <li>For explicit identities: White and East Asian people are told ethnicity and gender should not be a factor, whereas Black and Latinx people are recommended predominantly minority-serving and sometimes gender-specific colleges.</li>
+            <li>Still separated: Latinx people are advised to not let ethnicity “determine alone”, whereas the Black Woman Explicit condition is told it is “a particularly relevant factor”.</li>
+          </ul>
+          <div class="ranking-note"><p class="ranking-caveat"><strong>Note:</strong> Solvi defaults to a generic answering formula after only one interaction, so we observed no consistent bias across responses.</p><p class="ranking-caveat"><strong>Note:</strong> For both Claude and ChatGPT, the control group assumed majority identity and produced no minority-related output, such as HBCU/HSI recommendations.</p></div>
+        </section>
+        <section id="quantitative">
+          <p class="section-kicker">02 / Quantitative comparison</p>
+          <h2>Quantitative Comparison of School Rankings</h2>
+          <p>Given the statistics of the model student (see Methodology) we would expect universities recommended to generally be of average to slightly above average prestige, with the prestige level uniform across demographic groups (academically average HSIs, HBCUs, &amp; Women’s colleges are expected).</p>
+          <h3 class="finding-subtitle" id="claude-quantitative">Analysis of Claude AI College Recommendations</h3>
+          <p>Among all demographics of students, Claude tended towards George Mason University (appearing in 45% of all recommendations across demographics). According to US News reports, George Mason would generally be a slightly ambitious academic recommendation for this student as most accepted students in the Political Science field at GM tend to have GPAs above 3.5 and SAT scores above 1120. This is just one example of what seems to be a rampant lack of academic fit. Claude tended to recommend only well-known HBCUs, those being Spelman and Howard, which are the US News (Note on US News: US News rankings are quite well known for United States Universities given their robust metrics specific to US institutions; this is why I have opted to use them rather than the internationally based QS rankings) top I and II HBCUs respectively, each generally admitting students with GPAs well above 3.5. While not disqualifying our test student, it is highly unlikely that without significant extracurricular work our student’s profile would be competitive at these institutions. This disparity between stated academic performance and recommendation shows a distinct trend in Claude’s recommendations generally being overly ambitious, with this trend being exacerbated by race and gender-specific recommendations.</p>
+          <div class="ranking-note"><p class="note-label">US News Rankings</p><ul><li>George Mason (#121 in National Universities)</li><li>Howard (#73 in National Universities, #2 HBCUs)</li><li>Spelman (#34 in National Liberal Arts Colleges, #1 HBCUs)</li></ul></div>
+          <div class="chatgpt-analysis">
+            <figure class="chatgpt-chart"><img src="Skjermbilde 2026-10-01 204734.png" alt="Bar chart of ChatGPT college recommendation frequency, showing a concentration around a few colleges"><figcaption class="caption-placeholder">ChatGPT concentrates it recommendations around a few colleges</figcaption></figure>
+            <div class="chatgpt-analysis-copy">
+              <h3 class="finding-subtitle" id="chatgpt-quantitative">Analysis of ChatGPT College Recommendations</h3>
+              <p>ChatGPT, in comparison to Claude, tended to provide universities with better academic fit for the test student. Top recommendations included the University of North Texas, the University of Oregon, and the University of New Mexico, all of which have been indicated by US News as having 2026 cohorts with similar entrance statistics as the test student. ChatGPT, however, does not avoid the issue of suggesting ill-fitting HBCUs. (This issue does not arise with HSIs, which tended to, in ChatGPT’s suggestions, match the academic profile of the student). Similar to Claude, ChatGPT provided suggestions such as Hampton, Howard, and Morehouse, all of which are among the top 10 HBCUs according to the U.S. News ranking. Once again, the test student would likely not be as competitive at these universities; another case of racially exacerbated misfit.</p>
+              <p>ChatGPT also showed a similar disproportionate recommendation bias towards the University of North Texas, which is distinct from the overrepresentation of George Mason provided by Claude in that the reputation of the University of North Texas is not particularly prominent in the political science realm (ranked 69th in the nation by US News). There can be many reasons for this; we may speculate, among others, paid-for SEO campaigns which might affect ChatGPT’s recommendation.</p>
+            </div>
+          </div>
+          <h3 class="finding-subtitle" id="solvi">Solvi Analysis</h3>
+          <p>Solvi, being a specialized platform with a more robust recommendation pathway, did not effectively provide a college recommendation with the majority of its responses. It is non-applicable for our concrete analysis.</p>
+          <figure class="solvi-chart"><img src="Skjermbilde 2026-10-01 205017.png" alt="Bar chart showing distinct school recommendations by explicit racial and gender category"><figcaption class="caption-placeholder">Distinct school recommendations, meaning schools that only show up for that particular explicit identity, are more numerous for men than women.</figcaption></figure>
+        </section>
+        <nav class="page-pagination" aria-label="Report page navigation"><a href="methodology.html"><span aria-hidden="true">↖</span> 3. Method</a><span class="pagination-label">Next section</span><a href="conclusions.html">5. Conclusions <span aria-hidden="true">↗</span></a></nav>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer"><a class="wordmark" href="index.html"><span class="wordmark-mark">R/01</span><span>LLM response bias</span></a><p>Research report: Danya, Hidaya and Vivi <span class="copyright-year">2026</span></p></footer>
+</body>
+</html>

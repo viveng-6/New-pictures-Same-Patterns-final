@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Conclusions and limitations for a multimedia research report on LLM response bias.">
+  <title>Conclusions &amp; Limitations | LLM Response Bias</title>
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script src="assets/js/site.js" defer></script>
+</head>
+<body data-page="conclusions">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="LLM Response Bias home"><span class="wordmark-mark">R/01</span><span>Research report</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Sections <span aria-hidden="true">+</span></button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Report sections">
+      <a href="index.html">1. Entry</a><a href="literature-review.html">2. Literature</a><a href="methodology.html">3. Method</a><a href="findings.html">4. Findings</a><a href="conclusions.html" aria-current="page">5. Conclusions</a><a href="bibliography.html">6. Bibliography</a>
+    </nav>
+  </header>
+  <main id="main" class="page-shell report-page">
+    <p class="eyebrow"><span class="eyebrow-dot"></span> Part 05 <span class="eyebrow-rule"></span> Reflection</p>
+    <div class="page-title-row"><h1>Conclusions<br><span>&amp; limitations</span></h1><p class="page-deck">Findings, limitations, and implications for students seeking college advice.</p></div>
+    <div class="report-grid">
+      <aside class="page-aside"><span class="aside-label">In this section</span><a href="#conclusions">Conclusions</a><a href="#limitations">Limitations</a><a href="#impact">Impact</a></aside>
+      <article class="report-content">
+        <section id="conclusions">
+          <p class="section-kicker">01 / Conclusions</p>
+          <h2>Conclusions</h2>
+          <p>Looking back at Grander et al.'s (2026) definition, our results match the definition of bias in some ways but not in others. The definition traces bias back to “learned patterns”, but the much stronger effect in the explicit condition suggests something else may be at work too.</p>
+          <ul class="literature-points methodology-points">
+            <li>The “preference for specific groups” and the “perpetuation of stereotypes” show up clearly. For implicit identities, we observe more frequent reasoning based on community support, group research topics, and financial aid, which suggests <span class="text-highlight">assumption of preferences or priorities that the prompt does not include</span>. Thus, the basis of the recommendation is distorted.<span class="text-highlight">Just as Nurock describes, the default universal is assumed to be white </span> </li>
+            <li>We note three different bases of reasoning for the explicit identities: The default condition assumes no minority status, and ChatGPT tells explicitly white and East Asian students that ethnicity and gender should not be a factor, while making solely HBCU recommendations to all the Black students and telling Latinx students not to let it “determine alone”. This is not a factual error and likely well-intentioned. But <span class="text-highlight">is it an unproblematic assumption of the racialised students’ priorities?</span> It is likely stringent safety features, activated upon explicit identity declaration, that makes the LLMs privilege identity cohesion over all other considerations. As Haq (2026) points out, this could be a result of <span class="text-highlight">owner companies’ prioritization of protection from liability over ensuring equal access to good performance.</span></li>
+            <li>Adding to the harm effect of this reasoning difference is the observed propensity for mass-market LLMs (ChatGPT &amp; Claude) to draw from a limited repertoire of ethnic- and gender-specific schools to choose from, indicated by their lack of academic fit despite more fitting institutions in the same minority-serving category existing. The “inaccurate conclusions” part of the definition thus also holds, <span class="text-highlight">reversing our expectations in hypothesis 1</span>. This pattern can lead students to lose money on ill-fitting applications and obscure lesser-known institutions that may be a better fit for their profile.</li>
+            <li>Though we also found <span class="text-highlight">no evidence for our second hypothesis </span>, we see a startling lack of representation – a potential bias against – Women’s Institutions. The only demographic recommended for this type of institution is the implicitly and explicitly identified black woman. Thus, the only all-women's institution recommended is Spelman College, which also happens to be an HBCU, despite several all-women institutions matching the student’s academic profile (ex., Agnes Scott University, Hollins University).
+              <aside class="intersectionality-note" aria-labelledby="intersectionality-heading">
+                <h3 id="intersectionality-heading" class="aside-label">Intersectionality</h3>
+                <p>This points to the importance of intersectional awareness when investigating bias: Intersecting safety standards may narrow LLM performance, leading to what Haq (2026) terms exclusion bias. Other research, such as that of Dr.Joy Buolamwini below, has pointed to especially poor performance of AI tools used by and applied to Black women.</p>
+                <figure><img src="Skjermbilde 2026-10-01 031202.png" alt="A woman presenting beside a screen showing a digitally obscured face"><figcaption class="caption-placeholder">06</figcaption></figure>
+              </aside>
+            </li>
+            <li>There is no dramatic difference in bias displayed by Claude and ChatGPT, despite the former’s commitment to “AI constitutionalism”. We ask: Can and do safeguards effectively mitigate harm?</li>
+          </ul>
+          <p class="conclusion-solvi"><span class="text-highlight">Solvi, being a specified platform, performed best at not displaying biases for the implied categories, performing similarly for the explicit categories</span> with the caveat of HSIs and HBCUs mentions. While Solvi outperformed Claude and ChatGPT in this study, it should be noted that this performance was largely skewed by the nature of this platform, which required further information to provide formal university lists on a database made with such lists in mind. Given the limited nature of our testing, it is unlikely that we could have analyzed structural bias on such a platform, as the range and subtleties of the biases in the representations are likely missed with such a limited scope of investigation.</p>
+        </section>
+        <section id="limitations">
+          <p class="section-kicker">02 / Limitations</p>
+          <h2>Limitations</h2>
+          <p>This study bears several limitations which shall be enumerated below, along with several potential solutions for further studies:</p>
+          <ul class="literature-points methodology-points">
+            <li><strong>A lack of large-scale quantitative analysis</strong><p>For further study, we recommend a larger-scale analysis utilizing more than the 3 recommendations per demographic, as well as expanding to more demographic groups and varying the implicit naming convention using a randomizing database linked to the names and racial identity density census data.</p></li>
+            <li><strong>Subjective (thus biased) qualitative analysis</strong><p>Our main analysis method involved close reading, with literature-informed personal discretion applied to locate and interpret tone and reasoning bias. This introduces a range of bias sources, most significantly attribution bias and confirmation bias: we looked for the patterns we are already aware of. Our literature pointed to several different approaches to measuring reasoning and tone shifts. Their application was outside the scope of this project, but would be prudent for further study – to analyse college advising bias in a more objective and reproducible manner.</p></li>
+            <li><strong>LLM Usage Barriers</strong><p>In an ideal study, we would use fake, randomized emails to remain anonymous and prevent outside data from affecting the results of the LLM response. This would be particularly necessary for the specialized platform “Solvi” which requires certain data points in order to create an account. Solvi also presents an issue given its specialization, being that it provides recommendations for schools requiring a larger array of data than was considered in our study; some way of providing this auxiliary data across all LLMs would be necessary for receiving the same type of data across different-purpose platforms.</p></li>
+            <li><strong>Verbiage &amp; Implicit Bias</strong><p>We have no guarantee that our indication of implicit identity – through name concentration across ethnic groups in the United States – was detected as intended. However, our observations, especially of the LLMs recommending HBCUs to Letoya, do indicate that the implied identity was received. As Haq et al (2026) point out, explicit statement of ethnicity or gender is not how people normally talk to LLMs. The activated security mechanisms may have even greater effects in the isolated character of our inquiries: the models may interpret the identity statement as a part of the request, rather than as context.</p></li>
+          </ul>
+        </section>
+        <section id="impact">
+          <p class="section-kicker">03 / Impact</p>
+          <h2>Impact</h2>
+          <p>Prestigious universities being overrepresented for LLM responses; stereotyping based on implicit identities; unequivocal recommendation of minority-serving institutions for minorities; the need for an explicit declaration of racial identity for minority-serving institutions to be recommended; the relative barriers to entry for a more neutral LLM recommendation – all present themselves as urgent concerns facing students seeking recommendations.</p>
+          <p>As AI usage in college recommendations goes up, one might imagine a more egalitarian access to college counselling; however, the benefits of this are diminished if the quality of results is as low as what was observed in the study. As is, it furthers disparities between those with access to human services versus those provided by LLMs. This is, of course, dependent on location and socio-economic status. Solvi, whose recommendations tended to be neutral and ultimately more effective, requires significantly more time and personal information, which one might not be able to source or willing to provide to an LLM predicated on their relative lack of data protections and public trust.</p>
+          <p>We must conclude a negative impact is predictable without significant work being done to adjust large-scale non-specified models to less bias-based positions, or automatic further prompting to provide more fitting results.</p>
+        </section>
+        <nav class="page-pagination" aria-label="Report page navigation"><a href="findings.html"><span aria-hidden="true">↖</span> 4. Findings</a><span class="pagination-label">Next section</span><a href="bibliography.html">6. Bibliography <span aria-hidden="true">↗</span></a></nav>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer"><a class="wordmark" href="index.html"><span class="wordmark-mark">R/01</span><span>LLM response bias</span></a><p>Research report: Danya, Hidaya and Vivi <span class="copyright-year">2026</span></p></footer>
+</body>
+</html>

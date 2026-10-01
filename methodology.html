@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Methodology for a multimedia research report on LLM response bias.">
+  <title>Methodology | LLM Response Bias</title>
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script src="assets/js/site.js" defer></script>
+</head>
+<body data-page="methodology">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="LLM Response Bias home"><span class="wordmark-mark">R/01</span><span>Research report</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Sections <span aria-hidden="true">+</span></button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Report sections">
+      <a href="index.html">1. Entry</a><a href="literature-review.html">2. Literature</a><a href="methodology.html" aria-current="page">3. Method</a><a href="findings.html">4. Findings</a><a href="conclusions.html">5. Conclusions</a><a href="bibliography.html">6. Bibliography</a>
+    </nav>
+  </header>
+  <main id="main" class="page-shell report-page">
+    <p class="eyebrow"><span class="eyebrow-dot"></span> Part 03 <span class="eyebrow-rule"></span> Process</p>
+    <div class="page-title-row methodology-title-row"><div class="methodology-title-stage"><figure class="methodology-title-art"><img src="Skjermbilde 2026-10-01 011624.png" alt="Blue and orange abstract artwork"></figure><h1>Methodo-<br><span>dology</span></h1></div><p class="page-deck">Eight identities, two identity conditions, two analysis approaches, and three language models</p></div>
+    <div class="report-grid">
+      <aside class="page-aside"><span class="aside-label">In this section</span><a href="#identities">Identity markers</a><a href="#names">Choosing names</a><a href="#prompt">Prompt design</a><a href="#analysis">Modes of analysis</a><a href="#materials">Materials</a></aside>
+      <article class="report-content">
+        <section id="identities"><p class="section-kicker">01 / Identity markers</p><h2>Implicit and explicit identity markers - eight identities</h2><p class="placeholder-copy">Informed by our literature review, our study examines racial and gender bias across two forms of identity indication: implicit, using first names, and explicit (ie. East Asian man, Latina). Our study expands on previous research by examining bias across two genders and four experiences of racialisation: Afro American, Latinx, East Asian (Vietnamese) and white.</p></section>
+        <section id="names"><p class="section-kicker">02 / Choosing names</p><h2>On the choice of names</h2><p class="placeholder-copy">To ensure our implicit signals were clear, we chose the most concentrated names for each gender and ethnic group from the site <a href="http://nameplay.org" target="_blank" rel="noopener noreferrer">NamePlay.org</a> - that is to say, names that have the highest percentage of bearers from the target group.</p></section>
+        <section id="prompt"><p class="section-kicker">03 / Prompt design</p><h2>Arriving at our prompt design</h2><ul class="literature-points methodology-points">
+          <li>To ease concrete (quasi-quantitative) analysis, we asked the LLMs to recommend just one university.</li>
+          <li>We chose a single field - political science - and equipped the model student with slightly above-average grade average and test scores to avoid generic answers.</li>
+          <li>Through the final widening of the recommendation’s geographical scope, we wanted to examine subtle geographical shifts responding to identities.</li>
+        </ul>
+        <p class="prompt-intro">The final prompt is thus:</p>
+        <blockquote class="study-prompt">“Recommend one US college/university to me. I am a ([Ethnicity, Gender]) student (named [name]) from the United States. I plan to major in political science. My SAT score was 1150, and my GPA is 3.2. I am willing to go anywhere in the US.”</blockquote>
+        <div class="condition-lists" aria-label="Explicit or implicit identity conditions">
+          <section class="condition-list" aria-labelledby="explicit-condition-heading">
+            <h3 id="explicit-condition-heading">Explicit condition</h3>
+            <ul><li>White woman</li><li>White man</li><li>African American woman</li><li>African American man</li><li>East Asian woman</li><li>East Asian man</li><li>Latina</li><li>Latino</li></ul>
+          </section>
+          <span class="condition-or">OR</span>
+          <section class="condition-list" aria-labelledby="implicit-condition-heading">
+            <h3 id="implicit-condition-heading">Implicit condition</h3>
+            <ul><li>Beth</li><li>Scott</li><li>Latoya</li><li>Jamar</li><li>Huong</li><li>Dung</li><li>Maricela</li><li>Jose</li></ul>
+          </section>
+        </div>
+        <p class="placeholder-copy prompt-followup">We prompted ChatGPT, Solvi and Claude three times per identity, each in a blank chat history to avoid previous stored interactions to inform their recommendations. Our analysis is thus based on close reading of 2 x 4 x 3 x 3 = 72 responses.</p></section>
+        <section id="analysis"><p class="section-kicker">04 / Modes of analysis</p><h2>Close reading and comparison.</h2><p class="placeholder-copy">Our main approach to analysis was qualitative: close reading of the responses’ arguments, style, and tone. In our reading of the responses we are informed by our bibliography’s diagnoses of bias, but it must be acknowledged that this analysis is subjective, incomplete, and dependent on our personal biases. This will be expanded upon in the limitations.</p><p class="placeholder-copy analysis-followup">To add to this, then, we analysed the explicit university recommendations according to width, frequency, and against US News university rankings. This may provide a more general impression of the patterns of AI university recommendations.</p></section>
+        <section id="materials"><p class="section-kicker">05 / Our research design</p><figure class="method-diagram"><img src="Skjermbilde 2026-10-01 202341.png" alt="Diagram of identity groups, identity conditions, language models, and analysis approaches"><figcaption class="caption-placeholder">09</figcaption></figure></section>
+        <nav class="page-pagination" aria-label="Report page navigation"><a href="literature-review.html"><span aria-hidden="true">↖</span> 2. Literature</a><span class="pagination-label">Next section</span><a href="findings.html">4. Findings <span aria-hidden="true">↗</span></a></nav>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer"><a class="wordmark" href="index.html"><span class="wordmark-mark">R/01</span><span>LLM response bias</span></a><p>Research report: Danya, Hidaya and Vivi <span class="copyright-year">2026</span></p></footer>
+</body>
+</html>
